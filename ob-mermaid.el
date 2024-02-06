@@ -58,6 +58,7 @@
          (cmd (concat (shell-quote-argument (expand-file-name mmdc))
                       " -i " (org-babel-process-file-name temp-file)
                       " -o " (org-babel-process-file-name out-file)
+		      " --pdfFit "
 		      (when theme
 			(concat " -t " theme))
 		      (when background-color
